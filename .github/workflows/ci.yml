@@ -1,0 +1,13 @@
+name: Friendly CI
+
+on: [push]
+
+jobs:
+  job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greeting from CI
+        run: |
+          echo "Hej!"
+          echo "CI körs automatiskt ✅"
+          echo "Om du ser detta har du inte förstört något 🎉"
